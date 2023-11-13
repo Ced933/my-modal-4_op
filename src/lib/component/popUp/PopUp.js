@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import './PopUp.scss';
 
-export default function PopUp(props) { 
-//   si trigger est vrai c'est qu'on a submit le formulaire alors on affiche la popup et lorqu'on enleve la popup avec la croix elle se reinitialise automatiquement a false 
-//  et attend le prochain submit pour s'afficher  
+export default function PopUp(props) {  
   return (props.trigger)?(
     
      <div className='popup-container'>
