@@ -20,8 +20,7 @@ function PopUp(props) {
   }, /*#__PURE__*/_react.default.createElement("div", {
     onClick: () => props.setTrigger(false),
     className: "div-img-cross"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "img-cross",
-    src: "./signe-de-la-croix.png"
-  })), /*#__PURE__*/_react.default.createElement("h2", null, "Employee Created"))) : "";
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    className: "span-cross"
+  })), /*#__PURE__*/_react.default.createElement("h2", null, props.message))) : "";
 }
