@@ -1,12 +1,11 @@
-import PopUp from './component/popUp/PopUp'
+import PopUp from './lib/component/popUp/PopUp'
 import { useState } from 'react';
 function App() {
-
-  const [popupShow, setPopupShow] = useState(false);
+  const [message] = useState("Employee Created !");
+  const [popupShow, setPopupShow] = useState(true);
   return (
     <div className="App">
-    
-    <PopUp trigger={popupShow} setTrigger={setPopupShow}/>
+    <PopUp message={message} trigger={popupShow} setTrigger={setPopupShow}/>
     </div>
   );
 }

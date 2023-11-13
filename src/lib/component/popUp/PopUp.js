@@ -9,9 +9,9 @@ export default function PopUp(props) {
         </div>
         <div className='popup-box'>
             <div onClick={() => props.setTrigger(false)} className='div-img-cross'>
-                <img className='img-cross' src='./signe-de-la-croix.png' />
+                <span className='span-cross'></span>
             </div>
-            <h2>Employee Created</h2>
+            <h2>{props.message}</h2>
         </div>
     </div>
     ) : ""
