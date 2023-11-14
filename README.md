@@ -1,23 +1,38 @@
-# Getting Started with our React Modul
+# Presentation
 
+Accessible modal **PopUp** component for React.JS
+
+
+# Install
+
+``` bash 
 npm i my-modal-component-4-op
+```
 
-Dependencies :
-### `npm i react`
-### `npm i sass`
+## Exemple
 
-1. import { PopUp } from 'my-modal-component-4-op';
-2. const [message] = useState("Employee Created !"); // personalized own message
-3. const [popupShow, setPopupShow] = useState(false); initialized false 
-4.  return (
-    <>
-        <PopUp message={message} trigger={popupShow} setTrigger={setPopupShow}/>
-        <div onSubmit={handleSubmit}>
-            ...
-        </div>
-    </>
-  );
-  5. In your function handleSubmit you have to put setPopupShow(true) then the popup will be appear each time you will submit the form 
+Here is a simple example of my-modal-component-4-op being used in an app for a form 
+``` bash 
+import  React, { useState } from  'react';
+import { PopUp } from  'my-modal-component-4-op';
+export  default  function Form () {
+const [message] =  useState("Employee Created !"); //initialized own message
+const [popupShow, setPopupShow] =  useState(false);
+const  handleSubmit  = ()=>{
+...
+setPopupShow(true)
+}
+return (
+<>
 
+	<PopUp  message={message}  trigger={popupShow}  setTrigger={setPopupShow}  />
+
+	<form  onSubmit={handleSubmit} >
+		...
+	</form>
+</>
+)
+}
+```
 
 

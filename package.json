@@ -2,7 +2,7 @@
   "name": "my-modal-component-4-op",
   "description": "Modal popup",
   "keywords": ["react","modal","popup", "components", "ui"],
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "dist/index.js", 
   "module": "dist/index.js", 
   "files": [ "dist", "README.md" ],
