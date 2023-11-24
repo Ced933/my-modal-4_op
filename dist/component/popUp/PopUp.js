@@ -27,9 +27,8 @@ function PopUp(props) {
       backgroundColor: props.bgColorCross
     },
     className: "div-img-cross"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "cross-popup",
-    src: "./cross.png"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    className: "span-cross"
   })), /*#__PURE__*/_react.default.createElement("h2", {
     style: {
       color: props.fontColor
