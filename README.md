@@ -15,9 +15,22 @@ Here is a simple example of my-modal-component-4-op being used in an app for a f
 ``` bash 
 import  React, { useState } from  'react';
 import { PopUp } from  'my-modal-component-4-op';
+
 export  default  function Form () {
-const [message] =  useState("Employee Created !"); //initialized own message
+# Change text 
+const [message] =  useState("Employee Created !");
+# Change font color
+const [fontColor] =  useState('#333');
+# Change Bg color of cross
+const [bgColorCross]=  useState('#333');
+# Change Bg color modal
+const [bgColorContainerModal]=  useState('#fff');  
+# Change opacity of main Bg
+const [opcityMainBg]=  useState(0.5); 
+# Change color of main Bg
+const [mainBgColor]=  useState('black'); 
 const [popupShow, setPopupShow] =  useState(false);
+
 const  handleSubmit  = ()=>{
 ...
 setPopupShow(true)
@@ -25,7 +38,7 @@ setPopupShow(true)
 return (
 <>
 
-	<PopUp  message={message}  trigger={popupShow}  setTrigger={setPopupShow}  />
+	<PopUp  mainBgColor={mainBgColor}  opcityMainBg={opcityMainBg}  bgColorCross={bgColorCross}  bgColorContainerModal={bgColorContainerModal}  fontColor={fontColor}  message={message}  trigger={popupShow}  setTrigger={setPopupShow}/>
 
 	<form  onSubmit={handleSubmit} >
 		...

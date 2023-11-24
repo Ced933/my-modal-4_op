@@ -1,17 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './PopUp.scss';
 
 export default function PopUp(props) {  
   return (props.trigger)?(
     
      <div className='popup-container'>
-        <div className='popup-bg'>
+        <div style={{opacity:props.opcityMainBg, backgroundColor:props.mainBgColor}} className='popup-bg'>
         </div>
-        <div className='popup-box'>
-            <div onClick={() => props.setTrigger(false)} className='div-img-cross'>
-                <span className='span-cross'></span>
+        <div style={{backgroundColor:props.bgColorContainerModal}} className='popup-box'>
+            <div onClick={() => props.setTrigger(false)} style={{backgroundColor:props.bgColorCross}} className='div-img-cross' >
+                {/* <span className='span-cross'></span> */}
+                <img className='cross-popup' src='./cross.png' />
             </div>
-            <h2>{props.message}</h2>
+            <h2 style={{color:props.fontColor}}>{props.message}</h2>
         </div>
     </div>
     ) : ""
