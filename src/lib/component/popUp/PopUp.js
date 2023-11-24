@@ -10,7 +10,7 @@ export default function PopUp(props) {
         <div style={{backgroundColor:props.bgColorContainerModal}} className='popup-box'>
             <div onClick={() => props.setTrigger(false)} style={{backgroundColor:props.bgColorCross}} className='div-img-cross' >
                 {/* <span className='span-cross'></span> */}
-                <img className='cross-popup' src='./cross.png' />
+                <span className='span-cross'></span>
             </div>
             <h2 style={{color:props.fontColor}}>{props.message}</h2>
         </div>
