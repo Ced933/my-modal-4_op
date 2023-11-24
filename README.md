@@ -29,6 +29,7 @@ const [bgColorContainerModal]=  useState('#fff');
 const [opcityMainBg]=  useState(0.5); 
 # Change color of main Bg
 const [mainBgColor]=  useState('black'); 
+# the modal isn't visible 
 const [popupShow, setPopupShow] =  useState(false);
 
 const  handleSubmit  = ()=>{
@@ -47,5 +48,7 @@ return (
 )
 }
 ```
+![Exemple de la modal](https://github.com/Ced933/my-modal-4_op/blob/main/image/Capture.png?raw=true
+)
 
 
